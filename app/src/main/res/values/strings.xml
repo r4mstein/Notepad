@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Notepad</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_file_name">Название Нового Файла</string>
+    <string name="title_activity_edit_document">EditDocumentActivity</string>
+    <string name="hint_edit_document">Введите Ваш Текст</string>
+</resources>
