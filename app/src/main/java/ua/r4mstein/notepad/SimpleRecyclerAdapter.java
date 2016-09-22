@@ -10,11 +10,12 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SimpleRecyclerAdapter extends RecyclerView.Adapter<SimpleRecyclerAdapter.SimpleViewHolder> {
+class SimpleRecyclerAdapter extends RecyclerView.Adapter<SimpleRecyclerAdapter.SimpleViewHolder> {
 
-    private List<String> mFileNames = new ArrayList<>();
+//    private List<String> mFileNames = new ArrayList<>();
+    private String[] mFileNames;
 
-    public SimpleRecyclerAdapter(List<String> fileNames) {
+    SimpleRecyclerAdapter(String[] fileNames) {
         mFileNames = fileNames;
     }
 
@@ -28,12 +29,12 @@ public class SimpleRecyclerAdapter extends RecyclerView.Adapter<SimpleRecyclerAd
 
     @Override
     public void onBindViewHolder(SimpleViewHolder holder, int position) {
-        holder.mTextView.setText(mFileNames.get(position));
+        holder.mTextView.setText(mFileNames[position]);
     }
 
     @Override
     public int getItemCount() {
-        return mFileNames == null ? 0 : mFileNames.size();
+        return mFileNames == null ? 0 : mFileNames.length;
     }
 
     class SimpleViewHolder extends RecyclerView.ViewHolder {
@@ -41,18 +42,21 @@ public class SimpleRecyclerAdapter extends RecyclerView.Adapter<SimpleRecyclerAd
         CardView mCardView;
         TextView mTextView;
 
-        public SimpleViewHolder(View itemView) {
+        SimpleViewHolder(View itemView) {
             super(itemView);
 
             mCardView = (CardView) itemView.findViewById(R.id.itemCardView);
             mTextView = (TextView) itemView.findViewById(R.id.tvFileName);
 
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                }
-            });
+//            itemView.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    DocumentListFragment listFragment = new DocumentListFragment();
+//                    listFragment.openFile(mTextView.getText().toString());
+//                }
+//            });
         }
     }
+
+
 }

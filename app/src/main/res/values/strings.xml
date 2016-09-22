@@ -4,4 +4,7 @@
     <string name="hint_file_name">Название Нового Файла</string>
     <string name="title_activity_edit_document">EditDocumentActivity</string>
     <string name="hint_edit_document">Введите Ваш Текст</string>
+    <string name="popup_text_view">Удалить выбраный файл?</string>
+    <string name="popup_ok_button">Да</string>
+    <string name="popup_cancel_button">Отмена</string>
 </resources>
