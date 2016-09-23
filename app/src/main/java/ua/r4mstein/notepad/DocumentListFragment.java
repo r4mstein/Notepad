@@ -17,8 +17,6 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -156,6 +154,7 @@ public class DocumentListFragment extends Fragment {
 
             Intent intent = new Intent(getContext(), EditDocumentActivity.class);
             intent.putExtra("FILENAME", fileName);
+            intent.putExtra("CONTENT", content);
             startActivity(intent);
         }
     };

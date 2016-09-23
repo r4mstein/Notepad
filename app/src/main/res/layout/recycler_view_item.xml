@@ -22,15 +22,17 @@
         android:paddingBottom="8dp"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
-        android:paddingTop="8dp">
+        android:paddingTop="8dp"
+        android:background="@color/colorPrimary">
 
         <TextView
             android:id="@+id/tvFileName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#de000000"
+            android:textColor="@color/colorWhite"
             android:textSize="16sp"
-            android:text="Text"/>
+            android:text="Text"
+            />
 
     </LinearLayout>
 

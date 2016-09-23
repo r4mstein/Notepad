@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content_edit_document"
@@ -20,9 +20,19 @@
             android:id="@+id/fragmentEditDocEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_edit_document"/>
+            android:hint="@string/hint_edit_document"
+            android:textColorHint="@color/colorAccent"
+            android:imeOptions="actionDone"
+            android:textColor="@color/colorAccent"/>
 
     </ScrollView>
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/editDocSaveFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_action_save"
+        android:layout_margin="12dp"/>
 
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

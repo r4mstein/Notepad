@@ -5,13 +5,14 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@color/colorAccent">
+              android:background="@color/colorBackground">
 
     <TextView
         android:id="@+id/popupTextView"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="@string/popup_text_view"
+        android:textColor="@color/colorAccent"
         android:layout_gravity="center_horizontal"
         android:textSize="18sp"
         android:padding="5dp"/>
@@ -20,20 +21,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/colorBackground" />
+
         <Button
             android:id="@+id/popupOkButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/popup_ok_button"/>
+            android:text="@string/popup_ok_button"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/colorBackground" />
 
         <Button
             android:id="@+id/popupCancelButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/popup_cancel_button"/>
+            android:text="@string/popup_cancel_button"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/colorBackground" />
 
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBackground" />
 
 </LinearLayout>
